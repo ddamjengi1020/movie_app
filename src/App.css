@@ -1,3 +1,25 @@
-body{
-    background-color: #57606f;
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700|Squada+One&display=swap&subset=latin-ext');
+
+#root{
+    padding: 30px;
+}
+
+.container{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .loading__text{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-size: 40px;
+    font-weight: bold;
 }

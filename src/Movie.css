@@ -1,0 +1,71 @@
+.movie{
+    position: relative;
+    display: flex;
+    margin: 30px;
+    border-radius: 10px;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.movie img{
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    max-width: 170px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow:0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+.movie .data{
+    padding: 30px 15px 10px 30px;
+    background-color: rgba(0, 0, 0, 0.411);
+    border: 1px solid rgb(226, 226, 226);
+    max-width: 500px;
+    height: 200px;
+    border-radius:10px;
+    text-align: center;
+    display: grid;
+    color: rgb(46, 45, 45);
+    grid-template-columns: 1fr 1fr 0.2fr;
+    grid-template-rows: 0.2fr 0.2fr 1fr;
+    grid-template-areas: 
+    ". title year"
+    ". genres ."
+    ". summary summary";
+    grid-gap: 10px;
+}
+.data ul{
+    grid-area: genres;
+    display: flex;
+    justify-content: center;
+}
+.data .movie__title{
+    grid-area: title;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Squada One', cursive;
+    color: rgb(58, 58, 58);
+}
+
+.data .movie__year{
+    grid-area: year;
+    font-size: 18px;
+    margin: 0;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.genres .genres__genre{
+    font-size: 14px;
+    font-weight: 600;
+}
+.genres .genres__genre:not(:last-child){
+    margin-right: 8px;
+}
+
+.data .movie__summary{
+    grid-area: summary;
+    font-family: 'Alegreya Sans', sans-serif;
+    text-align: start;
+    color: white;
+}

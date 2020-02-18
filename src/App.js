@@ -28,7 +28,7 @@ class App extends React.Component {
       <section className="container">
         {isLoading ? (
           <div className="loading">
-            <span className="loading__text">loading...</span>
+            <span className="loading__text">Loading...</span>
           </div>
         ) : (
           movies.map(movie => (
@@ -38,6 +38,7 @@ class App extends React.Component {
               title={movie.title}
               summary={movie.summary}
               poster={movie.medium_cover_image}
+              genres={movie.genres}
             />
           ))
         )}
