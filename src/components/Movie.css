@@ -1,3 +1,7 @@
+.movies{
+    text-decoration-line: unset;
+}
+
 .movie{
     position: relative;
     display: flex;
